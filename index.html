@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#d91f2b">
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <meta name="description" content="Kenali Toko Mas Berkah, jaringan toko emas di berbagai wilayah Jawa Barat. Pelajari profil kami, kategori perhiasan, layanan jual beli dan konsultasi, serta informasi cabang.">
+  <title>Toko Mas Berkah — Mengenal Jaringan Kami</title>
+  <link rel="preconnect" href="https://unpkg.com">
+  <link rel="preconnect" href="https://tiles.openfreemap.org">
+  <link rel="stylesheet" href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+  <script defer src="data.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div class="announcement"><span class="announcement-dot"></span> TOKO MAS BERKAH · JARINGAN TOKO EMAS DI JAWA BARAT</div>
+  <header class="site-header">
+    <a class="brand" href="#beranda" aria-label="Toko Mas Berkah, beranda">
+      <img class="brand-logo" src="assets/logo-toko-mas-berkah.png" alt="Logo Toko Mas Berkah">
+      <span class="brand-copy"><strong>TOKO MAS BERKAH</strong><small>JARINGAN TOKO EMAS · JAWA BARAT</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav">
+      <a href="#beranda" class="nav-link active">Beranda</a>
+      <a href="#lokasi" class="nav-link">Lokasi toko</a>
+      <a href="#produk" class="nav-link">Produk & layanan</a>
+      <a href="#tentang" class="nav-link">Tentang kami</a>
+      <a href="#kontak" class="nav-contact">Hubungi toko <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="beranda">
+      <div class="hero-background-grid"></div>
+      <div class="hero-content">
+        <div class="eyebrow"><span class="eyebrow-line"></span> JARINGAN TOKO EMAS DI JAWA BARAT</div>
+        <h1>Toko Mas Berkah,<br><em>lebih dekat.</em></h1>
+        <p class="hero-intro">Di berbagai wilayah Jawa Barat, toko-toko kami hadir dengan nama lokal yang beragam. Kenali jaringan Berkah, lihat kategori produk dan layanan, serta dapatkan informasi cabang dalam satu tempat.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#tentang">Kenali kami <span>↗</span></a>
+          <a class="button button-outline" href="#produk">Produk & layanan</a>
+        </div>
+        <div class="hero-trust"><span class="trust-icon">✦</span><span>Jaringan di berbagai wilayah Jawa Barat</span><span class="trust-separator"></span><span>Perhiasan · Jual beli · Konsultasi</span></div>
+      </div>
+      <div class="hero-side hero-visual" aria-label="Logo resmi dan identitas Toko Mas Berkah">
+        <div class="visual-glow visual-glow-red"></div><div class="visual-glow visual-glow-blue"></div>
+        <div class="logo-stage">
+          <div class="logo-stage-top"><span class="stage-status-dot"></span><span>IDENTITAS RESMI</span><span class="stage-top-rule"></span><span>BERKAH</span></div>
+          <img class="hero-logo" src="assets/logo-toko-mas-berkah.png" alt="Logo resmi Toko Mas Berkah">
+          <div class="logo-stage-bottom"><span>JARINGAN TOKO EMAS</span><span class="stage-bottom-divider"></span><span>JAWA BARAT</span></div>
+        </div>
+        <div class="hero-visual-caption"><span class="caption-sparkle">✦</span><span>Perhiasan, logam mulia, dan layanan toko</span></div>
+        <span class="visual-orbit orbit-a"></span><span class="visual-orbit orbit-b"></span>
+      </div>
+      <div class="hero-bottom-line"></div>
+    </section>
+
+    <section class="stats-strip" aria-label="Ringkasan daftar awal">
+      <div class="stat"><strong id="totalBranches">31</strong><span>Entri toko terdaftar</span></div>
+      <div class="stat"><strong id="totalAreas">13</strong><span>Area pada daftar awal</span></div>
+      <div class="stat"><strong>07.00–17.00</strong><span>Jam operasional sementara</span></div>
+      <div class="stat stat-note"><span class="mini-star">✦</span><span>Data akan diperbarui<br>secara bertahap</span></div>
+    </section>
+
+    <section class="section about-section" id="tentang">
+      <div class="about-emblem"><div class="about-logo-frame"><span class="about-logo-kicker">IDENTITAS JARINGAN</span><img src="assets/logo-toko-mas-berkah.png" alt="Logo resmi Toko Mas Berkah"><span class="about-logo-foot">JAWA BARAT · INDONESIA</span></div><span class="about-orbit about-orbit-one"></span><span class="about-orbit about-orbit-two"></span></div>
+      <div class="about-copy"><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> TENTANG TOKO MAS BERKAH</div><h2>Beragam nama toko,<br><em>satu jaringan Berkah.</em></h2><p>Toko Mas Berkah menaungi jaringan toko emas yang hadir dengan nama lokal di sejumlah wilayah Jawa Barat. Setiap toko memiliki identitas dan lokasinya masing-masing, sementara website ini menjadi pintu masuk untuk mengenal jaringan, produk, serta layanan yang tersedia.</p><p>Kami ingin memudahkan pelanggan memperoleh informasi yang jelas—mulai dari mengenal Toko Mas Berkah, memahami kategori layanan, hingga menemukan cabang yang tepat untuk dihubungi.</p><a class="text-button" href="#lokasi">Jelajahi jaringan cabang <span>→</span></a></div>
+    </section>
+
+
+    <section class="section location-section" id="lokasi">
+      <div class="section-heading heading-split">
+        <div><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> DIREKTORI CABANG</div><h2>Temukan toko<br><em>di sekitar Anda.</em></h2></div>
+        <p>Jelajahi area toko dalam satu peta. Cari nama toko atau wilayah, lalu pilih cabang untuk melihat informasi alamat dan kontaknya.</p>
+      </div>
+
+      <div class="directory-controls">
+        <label class="search-box" for="storeSearch"><span class="search-icon">⌕</span><input type="search" id="storeSearch" placeholder="Cari nama toko, area, alamat, atau nomor…" autocomplete="off"><kbd>⌕</kbd></label>
+        <div class="area-picker" id="areaPicker">
+          <span class="area-picker-label">WILAYAH</span>
+          <button class="area-picker-trigger" id="areaPickerTrigger" type="button" aria-haspopup="listbox" aria-expanded="false" aria-controls="areaPickerPanel">
+            <span class="area-picker-trigger-icon" aria-hidden="true">⌖</span>
+            <span class="area-picker-current"><strong id="areaPickerValue">Semua wilayah</strong><small id="areaPickerHint">13 area · 31 entri toko</small></span>
+            <span class="area-picker-chevron" aria-hidden="true">⌄</span>
+          </button>
+          <div class="area-picker-panel" id="areaPickerPanel" hidden>
+            <div class="area-picker-panel-head"><div><small>PILIH WILAYAH</small><strong>Jelajahi jaringan</strong></div><span class="area-picker-total" id="areaPickerSummary">13 wilayah</span></div>
+            <label class="area-picker-search" for="areaPickerSearch"><span aria-hidden="true">⌕</span><input id="areaPickerSearch" type="search" placeholder="Cari nama wilayah…" autocomplete="off"></label>
+            <div class="area-picker-list" id="areaPickerList" role="listbox" aria-label="Pilih wilayah"></div>
+            <div class="area-picker-panel-footer"><span>Pilih wilayah untuk menyaring daftar toko dan peta.</span><button id="areaPickerClear" type="button">Lihat semua</button></div>
+          </div>
+          <select id="areaFilter" class="area-native-select" tabindex="-1" aria-hidden="true"><option value="">Semua wilayah</option></select>
+        </div>
+        <button class="reset-filter" id="resetFilter" type="button">Reset filter <span>↺</span></button>
+      </div>
+
+      <div class="map-layout">
+        <div class="map-panel">
+          <div class="map-panel-head"><div><span class="map-live-dot"></span><strong>Peta jaringan toko</strong></div><span class="map-label">JAWA BARAT · INDONESIA</span></div>
+          <div id="storeMap" role="application" aria-label="Peta area toko emas Berkah"></div>
+          <div class="map-footnote"><span class="pin-key"></span><span>Titik peta masih perkiraan area/pasar, belum koordinat GPS toko yang terverifikasi. Peta: <a href="https://openfreemap.org/" target="_blank" rel="noopener">OpenFreeMap</a> © OpenMapTiles · Data dari <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">OpenStreetMap</a>.</span></div>
+        </div>
+        <div class="directory-panel">
+          <div class="directory-panel-head"><div><span class="eyebrow eyebrow-dark">HASIL PENCARIAN</span><h3 id="resultsTitle">Daftar toko</h3></div><span class="result-count" id="resultCount">31</span></div>
+          <div class="results-caption" id="resultsCaption">Semua toko dari daftar awal</div>
+          <div class="branch-list" id="branchList" aria-live="polite"></div>
+          <div class="empty-state" id="emptyState" hidden><span>⌕</span><strong>Toko belum ditemukan</strong><p>Coba kata kunci atau wilayah yang berbeda.</p><button class="text-button" id="emptyReset" type="button">Tampilkan semua toko →</button></div>
+        </div>
+      </div>
+      <div class="data-note"><span>ⓘ</span><p><strong>Catatan data awal:</strong> beberapa toko memakai alamat area/pasar yang sama pada dokumen sumber. Mohon verifikasi titik persis, alamat tiap unit, dan jam/hari operasional sebelum website dipublikasikan kepada pelanggan.</p></div>
+    </section>
+
+    <section class="products-section" id="produk">
+      <div class="products-inner">
+        <div class="products-heading section-heading reveal-item">
+          <div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> PRODUK & LAYANAN</div>
+          <h2>Koleksi pilihan,<br><em>untuk setiap momen.</em></h2>
+          <p>Perhiasan emas, logam mulia, dan layanan untuk kebutuhan Anda.</p>
+        </div>
+
+        <div class="product-category-grid" aria-label="Kategori perhiasan">
+          <a class="product-card reveal-item" href="#lokasi" aria-label="Lihat cabang untuk kategori cincin">
+            <div class="product-image-wrap"><img src="assets/products/cincin.jpg" alt="Ilustrasi koleksi cincin emas" loading="lazy"><span class="product-image-tag">PERHIASAN</span></div>
+            <div class="product-card-bottom"><h3>Cincin</h3><span class="product-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="product-card reveal-item" href="#lokasi" aria-label="Lihat cabang untuk kategori gelang">
+            <div class="product-image-wrap"><img src="assets/products/gelang.jpg" alt="Ilustrasi koleksi gelang emas" loading="lazy"><span class="product-image-tag">PERHIASAN</span></div>
+            <div class="product-card-bottom"><h3>Gelang</h3><span class="product-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="product-card reveal-item" href="#lokasi" aria-label="Lihat cabang untuk kategori kalung">
+            <div class="product-image-wrap"><img src="assets/products/kalung.jpg" alt="Ilustrasi koleksi kalung emas" loading="lazy"><span class="product-image-tag">PERHIASAN</span></div>
+            <div class="product-card-bottom"><h3>Kalung</h3><span class="product-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="product-card reveal-item" href="#lokasi" aria-label="Lihat cabang untuk kategori liontin">
+            <div class="product-image-wrap"><img src="assets/products/liontin.jpg" alt="Ilustrasi koleksi liontin emas" loading="lazy"><span class="product-image-tag">PERHIASAN</span></div>
+            <div class="product-card-bottom"><h3>Liontin</h3><span class="product-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="product-card reveal-item" href="#lokasi" aria-label="Lihat cabang untuk kategori anting">
+            <div class="product-image-wrap"><img src="assets/products/anting.jpg" alt="Ilustrasi koleksi anting emas" loading="lazy"><span class="product-image-tag">PERHIASAN</span></div>
+            <div class="product-card-bottom"><h3>Anting</h3><span class="product-arrow" aria-hidden="true">↗</span></div>
+          </a>
+          <a class="product-card reveal-item" href="#lokasi" aria-label="Lihat cabang untuk kategori giwang">
+            <div class="product-image-wrap"><img src="assets/products/giwang.jpg" alt="Ilustrasi koleksi giwang emas" loading="lazy"><span class="product-image-tag">PERHIASAN</span></div>
+            <div class="product-card-bottom"><h3>Giwang</h3><span class="product-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </div>
+
+        <div class="product-feature-grid">
+          <a class="product-feature-card feature-bullion reveal-item" href="#lokasi" aria-label="Tanyakan ketersediaan logam mulia di cabang">
+            <img src="assets/products/logam-mulia.jpg" alt="Foto ilustrasi produk logam mulia" loading="lazy">
+            <span class="feature-overlay"></span>
+            <div class="feature-copy"><span class="feature-kicker">LOGAM MULIA</span><h3>Antam, MiniGold,<br>dan lainnya.</h3><span class="feature-link">Tanyakan ke cabang <b>↗</b></span></div>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="product-feature-card reveal-item" href="#lokasi" aria-label="Hubungi cabang untuk layanan jual beli emas">
+            <img src="assets/products/jual-beli.jpg" alt="Ilustrasi layanan jual beli emas" loading="lazy">
+            <span class="feature-overlay"></span>
+            <div class="feature-copy"><span class="feature-kicker">LAYANAN KAMI</span><h3>Jual Beli Emas</h3><span class="feature-link">Lihat cabang <b>↗</b></span></div>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </a>
+          <a class="product-feature-card reveal-item" href="#lokasi" aria-label="Hubungi cabang untuk layanan konsultasi">
+            <img src="assets/products/konsultasi.jpg" alt="Ilustrasi konsultasi perhiasan di toko" loading="lazy">
+            <span class="feature-overlay"></span>
+            <div class="feature-copy"><span class="feature-kicker">LAYANAN KAMI</span><h3>Konsultasi</h3><span class="feature-link">Hubungi toko <b>↗</b></span></div>
+            <span class="feature-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+        <p class="products-note">Foto bersifat ilustrasi. Pilihan produk, merek, dan layanan dapat berbeda di setiap cabang; konfirmasikan langsung kepada toko.</p>
+      </div>
+    </section>
+
+
+    <section class="faq-section">
+      <div class="section faq-inner"><div class="eyebrow eyebrow-dark"><span class="eyebrow-line"></span> INFORMASI PRAKTIS</div><h2>Pertanyaan yang<br><em>sering diajukan.</em></h2><div class="faq-list">
+        <details><summary>Jam operasional toko pukul berapa?<span>＋</span></summary><p>Untuk versi awal website, jam operasional ditampilkan sementara pukul 07.00–17.00. Jam aktual setiap cabang perlu dikonfirmasi sebelum publikasi.</p></details>
+        <details><summary>Apakah semua cabang menjual produk yang sama?<span>＋</span></summary><p>Belum tentu. Kategori pada website merangkum informasi awal jaringan; silakan hubungi cabang yang dituju untuk memastikan produk dan layanan tersedia.</p></details>
+        <details><summary>Bagaimana cara menemukan cabang?<span>＋</span></summary><p>Gunakan kolom pencarian atau filter wilayah pada bagian Lokasi Toko. Pilih kartu cabang untuk melihat alamat dan tombol kontak atau membuka petunjuk arah di Google Maps.</p></details>
+        <details><summary>Mengapa titik peta belum persis di lokasi toko?<span>＋</span></summary><p>Dokumen awal belum memuat koordinat GPS tiap toko. Titik pada prototipe menunjukkan perkiraan area/pasar dan perlu dikonfirmasi menggunakan lokasi akurat masing-masing cabang.</p></details>
+      </div></div>
+    </section>
+
+    <section class="contact-band" id="kontak"><div class="contact-band-inner"><div><div class="eyebrow"><span class="eyebrow-line"></span> ADA YANG INGIN DITANYAKAN?</div><h2>Hubungi cabang<br><em>yang Anda tuju.</em></h2><p>Pilih toko di direktori untuk menghubungi kontak cabang yang tersedia.</p></div><a href="#lokasi" class="button button-gold">Pilih lokasi toko <span>↗</span></a></div></section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="brand footer-brand" href="#beranda"><img class="brand-logo" src="assets/logo-toko-mas-berkah.png" alt="Logo Toko Mas Berkah"><span class="brand-copy"><strong>TOKO MAS BERKAH</strong><small>JARINGAN TOKO EMAS · JAWA BARAT</small></span></a><p>Kenali Toko Mas Berkah dan temukan informasi jaringan toko emas, produk, serta layanan kami di Jawa Barat.</p><div class="footer-nav"><a href="#lokasi">Lokasi</a><a href="#produk">Produk & layanan</a><a href="#tentang">Tentang kami</a></div></div><div class="footer-bottom"><span>© <span id="year">2026</span> Tokomas Berkah · Prototipe website</span><span>Informasi cabang dalam tahap verifikasi</span></div></footer>
+
+  <dialog class="branch-dialog" id="branchDialog"><button class="dialog-close" id="dialogClose" aria-label="Tutup detail">×</button><div id="dialogContent"></div></dialog>
+  <noscript><div class="noscript">Website memerlukan JavaScript untuk pencarian, direktori toko, dan peta interaktif.</div></noscript>
+</body>
+</html>
